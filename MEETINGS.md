@@ -1,45 +1,94 @@
 # Meetings and Tasks
 
-Team T01 — Recipe Finder. We have been coordinating in our Teams group chat. This file keeps the decisions we made and what each of us is working on. Everyone fills in their own section.
+Team T01 — Recipe Finder. We coordinate in our Teams group chat ("CS624 Team Project") instead of scheduled calls, so this file is a log of what we discussed and decided there, followed by what each of us is working on. Everyone fills in their own section.
 
-## Decisions so far (TP02)
+## Discussion log
 
-- The code lives in this repo under Brandon's GitHub account. The rest of us send our changes as pull requests.
-- Brandon set up the architecture and placeholder files with to-dos, so each of us has our own files to work in. Owners are listed in `RecipeFinder/file architecture.md`.
+### Oct 25, 2026 — TP01 setup
+
+- Brandon drafted the learning team charter from a template and shared it for everyone to fill in.
+- Confirmed the TP01 submission needs the charter, the peer review and the proposal.
+- Agreed the charter is a working document that we update as we go.
+
+### Nov 17, 2026 — Splitting the TP02 work
+
+- Enzo takes the Literature Review for the report and asked everyone to pick a report section and a part of the app.
+- Brandon takes the architecture and methodology: how many components, screens and style files we need and where they go, so the work can be delegated for TP03.
+- Agreed to share the code in one GitHub repo.
+
+### Nov 18, 2026 — Project overview
+
+- Brandon will follow the structure of the Cities app in chapter 6.2 of the textbook because it is very close to our app.
+- Jacqueline shared a project overview document with the responsibilities of each member:
+  - Brandon — UI design and navigation: Home screen, app layout, navigation, reusable UI components
+  - Jacqueline — recipe search: Search screen, search bar, filtering the local recipe data
+  - Enzo — recipe details: images, ingredients, measurements, preparation instructions
+  - Vishal — favorites and testing: Favorites screen, favorite selections in React state, coordinating testing
+
+### Nov 19, 2026 — How we work
+
+- Agreed on the project overview: each member owns a part of the code and builds on it until the project is done.
+- Agreed the code goes in a common repo.
+- Brandon's deliverable for the week: the folder tree and placeholder files with to-do comments and routing, so every task is tied to a file name.
+- We stay in the chat instead of calls so everyone can follow.
+
+### Nov 20, 2026 — Architecture shared, open tasks picked up
+
+- Brandon shared the architecture and file structure, and asked for owners for persistence and the shopping list.
+- Jacqueline started on the shopping list.
+- Vishal confirmed Favorites and testing, and took persistence for favorites (AsyncStorage: load on launch, save on every toggle). For the report Vishal takes the references and the APA check.
+- Vishal went through the Team Project Overview on Brightspace and listed requirements that were not in our plan yet: AsyncStorage persistence, CRUD operations on the data, code on GitHub with a README.md and a MEETINGS.md, public repos, and a screenshot of the app running.
+- Timing: TP02 is the progress report with the architecture and the code we have so far. The complete working app is the target for TP03.
 - We keep building the report from the TP01 document.
-- Vishal takes Favorites, persistence for favorites, and testing.
-- For the TP02 report, Vishal does the references section and the APA check.
+
+### Nov 21, 2026 — Report document and GitHub repo
+
+- Enzo shared the TP02 report document with his Literature Review and asked everyone to add their parts.
+- Brandon created this GitHub repo and pushed the latest files. The old SharePoint folder is no longer used.
+- Brandon added the cover page "Team and Professor - Start Here.md".
+
+### Nov 22, 2026 — TP02 wrap-up
+
+- Vishal updated the references in the TP02 document: all six in APA format, the three papers checked against the originals, alphabetical order, and in-text citations added to the literature review.
+- Vishal added the Favorites tab navigation, the AsyncStorage and navigation packages, the test checklist, README.md and this file to the repo. The app now starts and shows the Home and Favorites tabs.
 
 ## Open items
 
-- Shopping list: the file is a placeholder, it is not in the navigation yet, and it needs an owner.
+- Shopping list: Jacqueline has started on it. In the repo it is still a placeholder and not in the navigation.
 - Recipe data: add the recipes by hand or bring in a larger set.
 - Course requirements still to cover as a team: CRUD operations on the data, and a screenshot of the app running.
 - Agree the final values that `RecipeContext` shares (shopping list and `addToShoppingList` are not in it yet).
+- Add the professor and the TA to the repo.
 
 ## Tasks by member
 
-### Brandon
+### Brandon — UI design and navigation
 
 Files: `App.js` (app state and context provider), `src/index.js` (navigation), `src/RecipeContext.js`, `src/theme.js`, `src/components/`, `src/Home/Home.js`
 
+Report: architecture and methodology
+
 (Brandon to fill in)
 
-### Jacqueline
+### Jacqueline — recipe search
 
 Files: `src/data/recipes.js`, `src/Search/Search.js`, `src/Search/SearchBar.js`, `assets/images/`
 
 (Jacqueline to fill in)
 
-### Enzo
+### Enzo — recipe details
 
 Files: `src/RecipeDetails/RecipeDetails.js`
 
+Report: literature review
+
 (Enzo to fill in)
 
-### Vishal
+### Vishal — favorites, persistence and testing
 
 Files: `src/Favorites/Favorites.js`, the favorites methods in `App.js`, `TESTING.md`
+
+Report: references and APA check
 
 What I did for TP02:
 
@@ -50,10 +99,10 @@ What I did for TP02:
 - Dependencies. Added AsyncStorage and the React Navigation packages to `package.json` with `npx expo install`, so `npm install` is enough to set the project up.
 - Testing. Wrote the manual test checklist in `TESTING.md`. It covers every screen, with the most detail on favorites and persistence.
 - Docs. Added `README.md` and this file.
-- Report. References section and APA check.
+- Report. Rewrote the six references in APA, checked them against the sources, and added the in-text citations.
 
 What is next for TP03:
 
 - Run the test checklist on a real device and record the results.
 - Work with Enzo on the favorite button in Recipe Details.
-- Help with the shopping list if it still has no owner.
+- Help with the shopping list where needed.

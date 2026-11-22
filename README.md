@@ -25,7 +25,7 @@ The architecture, navigation and shared components are in place. The screens are
 | Favorites screen | Vishal | Done, waiting on Recipe Details for the favorite button |
 | Favorites persistence (AsyncStorage) | Vishal | Done |
 | Test checklist | Vishal | Written, not run yet |
-| Shopping list | Not assigned | Placeholder |
+| Shopping list | Jacqueline (started) | Placeholder in the repo |
 
 ## How to run
 
