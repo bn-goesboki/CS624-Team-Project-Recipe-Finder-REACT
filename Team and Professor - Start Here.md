@@ -10,7 +10,7 @@ Routing and minimum functionality have been defined, allowing all team members t
 Optional Notes:
 Brandon - files that are presented have notes when Ai was used. A majority of my code was repurposed from city finder app in chapter 6.  Some of the props, stack push functions were replaced (with provider for example) given how fast REACT dev is going.  While writing code was recommeneded by Windsurf (an analogue of GitHub co-pilot) due to new advances in the code syntax. I kept these new items in as placeholders so I can take the time to learn them and poperly implement them or change them later.  I noted all instances.
 
-Jacqueline:
+Jacqueline: I am working on the Search and SearchBar files and part of the hsoppinList, i have so far worked on the searchBar and will continue building, next will be the search file and others as i continue to build and enter the TP03. 
 
 Vishal - I own Favorites, persistence for favorites, and testing.
 - `RecipeFinder/App.js`: I wrote `toggleFavorite`, `isFavorite` and `saveFavorites`, and the part of `componentDidMount` that loads the saved favorites. Favorites are stored with AsyncStorage under the key `RecipeFinder:favorites`. They load when the app starts and save on every toggle. The add/remove logic follows the PE03 toggleComplete / deleteTodo pattern (spread + filter). I did not change anything else in App.js.

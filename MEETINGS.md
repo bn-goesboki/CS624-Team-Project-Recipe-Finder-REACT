@@ -74,6 +74,7 @@ Report: architecture and methodology
 
 Files: `src/data/recipes.js`, `src/Search/Search.js`, `src/Search/SearchBar.js`, `assets/images/`
 
+I have so far added the searchBar.js file code and this component will help capture user input through the TextInput component, while search.js will manage the search functionality using the React useState Hook. I am yet to add the search.js code too for the TP03.
 (Jacqueline to fill in)
 
 ### Enzo — recipe details
