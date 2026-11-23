@@ -19,13 +19,13 @@ The architecture, navigation and shared components are in place. The screens are
 | Navigation (bottom tabs, one stack per tab) | Brandon | Home and Favorites tabs wired, Search tab pending |
 | Shared components (RecipeCard, CenterMessage, Button) | Brandon | In progress |
 | Home screen | Brandon | In progress |
-| Recipe data | Jacqueline |  (shape agreed): To be discussed
-| Search | Jacqueline: In progress
+| Recipe data | Jacqueline |  (shape agreed):   To be discussed
+| Search | Jacqueline:    In progress
 | Recipe Details | Enzo | Placeholder |
 | Favorites screen | Vishal | Done, waiting on Recipe Details for the favorite button |
 | Favorites persistence (AsyncStorage) | Vishal | Done |
 | Test checklist | Vishal | Written, not run yet |
-| Shopping list | Jacqueline (started) In progress
+| Shopping list | Jacqueline (started).   In progress
 
 ## How to run
 
